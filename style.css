@@ -210,6 +210,11 @@ a {
     color: #45a29e;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #66fcf1;
+}
+
 .contact {
     font-size: large;
     padding-left: 10vh;
