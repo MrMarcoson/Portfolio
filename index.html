@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="slider.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            changeSlide(0);
+        });
+    </script>
+
+    <title>Marek Kasprowicz</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">Marek Kasprowicz</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class = "container" id="home">
+
+        <div class = "jumbotron text-center">
+            <h1>KASPROWICZ</h1>
+        </div>
+
+    </div>
+
+    <div class = "container-fluid" id="about">
+
+        <div class = "row bg-1">
+            
+            <div class="col-lg-4 text-center">
+                <img src="me.jpg" class="img-responsive img-circle logo" alt="me" width="70%" height="70%">
+            </div>
+
+            <div class="col-lg-8 about-right">
+                <h1>About Me</h1>
+                <p>Hello, my name is Marek Kasprowicz and I am a programmer.</p>
+                <p>I'm vastly fond of creating applications, microservices, webpages and games.</p>
+                <p>Currently I am studying Computer Science on Nicolaus Copernicus University in Toruń. In 2019 I have gratuated from Technical High School "Electronic" in Bydgoszcz, where my passion to Informatics was born.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class = "container-fluid bg-2" id="skills">
+
+        <div class = "row text-center">
+            <h1>Skills</h1>
+            <p>This is a list of what I am proficient in, things that I use while working on projects.</p>
+            <hr>
+        </div>
+
+        <div class = "row">
+            
+            <div class="col-lg-2">
+                <h2>Programming</h2>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>GDScript</li>
+                    <li>DLang</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h2>Tools</h2>
+                <ul>
+                    <li>Spring Boot</li>
+                    <li>JavaFX</li>
+                    <li>GitHub</li>
+                    <li>Godot</li>
+                    <li>Android Studio</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2"></h2>
+                <h2>Webdev</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h2>Databases</h2>
+                <ul>
+                    <li>SQL</li>
+                    <li>Oracle SQL Developer</li>
+                    <li>JPA</li>
+                    <li>JDBC</li>
+                    <li>H2</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h2>Certificates</h2>
+                <ul>
+                    <li>CISCO Computing and Routing</li>
+                    <li>CISCO Cybersecurity</li>
+                    <li>E.12 Computer Diagnostics</li>
+                    <li>E.13 Network Design and Administration</li>
+                    <li>E.14 Websites and Databases Development</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h2>Knowledge</h2>
+                <ul>
+                    <li>Creating applications</li>
+                    <li>Working with documentations</li>
+                    <li>Programming in group</li>
+                    <li>Network design</li>
+                    <li>Computer diagnostics</li>
+                    <li>Fluent English</li>
+                    <li>Music composition</li>
+                    <li>Sound design</li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class = "container-fluid bg-3" id="portfolio">
+
+        <div class = "row text-center">
+            <h1>Portfolio</h1>
+            <p>Some of my projects</p>
+            <br>
+        </div>
+
+        <div class = "row">
+
+            <!-- Controller to change slides -->
+            <div class="col-lg-1 btn_prev text-center" onclick="changeSlide(-1)">&#10094;</div>
+
+            <!-- Diffrent slides, only one is shown at the time -->
+            <div class="col-lg-10 slide">
+
+                <div class="col-lg-6">                
+                    <h2>Snake Multiplayer</h2>
+                    <p>Multiplayer snake game, that uses Java TCP soccets to communicate between players.</p>
+                    <p>Technologies used:<p>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6" id="project-img">
+                    <img src="snake.png" class="img-responsive" alt="me">
+                </div>
+
+            </div>
+
+            <!--2-->
+            <div class="col-lg-10 slide">
+
+                <div class="col-lg-6">                
+                    <h2>Zombie TopDown</h2>
+                    <p>This is my first bigger game that I was creating from the scratch using Godot 3.</p>
+                    <p>In the game Player need to survive as long as he can. At night waves of Zombies spawn. Enemies follow player and hurt him whenever they collide with him. </p>
+                    <p>Player can use 3 kinds of weapons: pistol, machine gun and sniper rifle. Every type of weapon can be upgraded by money you get after finishing wave. Enemies upon killed can drop health packs and ammo to weapons.</p>
+                </div>
+
+                <div class="col-lg-6" id="project-img">
+                    <img src="zombie.png" class="img-responsive img-project" alt="zombie">
+                </div>
+
+            </div>
+
+            <!--3-->
+            <div class="col-lg-10 slide">
+
+                <div class="col-lg-6">                
+                    <h2>RayCaster</h2>
+                    <p>Raycasting 3D in style of DooM. This is my final project for my University class "Basics of Graphical Programming"</p>
+                    <p>Technologies used:<p>
+                        <ul>
+                            <li>C++</li>
+                            <li>QT Creator</li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-6" id="project-img">
+                    <img src="raycaster.png" class="img-responsive" id="logo" alt="me">
+                </div>
+
+            </div>
+
+            <!--4-->
+            <div class="col-lg-10 slide">
+
+                <div class="col-lg-6">                
+                    <h2>Morphing</h2>
+                    <p>One of my favourite projects created for my University class, that morphes one area of picture into another.                        <p>
+                    <p>Technologies used:<p>
+                        <ul>
+                            <li>C++</li>
+                            <li>QT Creator</li>
+                        </ul>                
+                    </div>
+
+                <div class="col-lg-6" id="project-img">
+                    <img src="morphing.gif" class="img-responsive" id="logo" alt="me">
+                </div>
+
+            </div>
+
+            <!--5-->
+            <div class="col-lg-10 slide">
+
+                <div class="col-lg-6">                
+                    <h2>Filmbase</h2>
+                    <p>Simple full-stack application for keeping tracks of movies. </p>
+                    <p>Technologies used:<p>
+                        <ul>
+                            <li>Java</li>
+                            <li>SpringBoot</li>
+                            <li>React</li>
+                            <li>H2 Database</li>
+                            <li>JPA</li>
+                        </ul>                
+                </div>
+
+                <div class="col-lg-6" id="project-img">
+                    <img src="filmbase.png" class="img-responsive" id="logo" alt="me">
+                </div>
+
+            </div>
+
+            <div class="col-lg-1 btn_next text-center" onclick="changeSlide(1)">&#10095;</div>
+
+        </div>
+
+    </div>
+
+    <div class = "container-fluid bg-2" id="contact">
+
+        <div class = "row text-center">
+            <h1>Contact</h1>
+            <br>
+        </div>
+        
+        <div class = "row">
+
+            <div class="col-lg-6">
+                <form action="mailto:mkasprowiczdev@gmail.com" method="post" enctype="text/plain">
+                    <div class="row">
+
+                        <div class="col-lg-6 form-group">
+                            <input class="form-control" id="topic" name="topic" placeholder="Topic" type="text" required>
+                        </div>
+
+                        <div class="col-lg-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="E-mail" type="text" required>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-12 form-group">
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="7"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Send</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 contact">
+                <p>Marek Kasprowicz</p>
+                <p>mkasprowiczdev@gmail.com</p>
+                <p><a href="https://github.com/MrMarcoson">Github</a></p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class = "container-fluid bg-4">
+
+        <div class = "row text-right">
+            <p>Page created by Marek Kasprowicz</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
