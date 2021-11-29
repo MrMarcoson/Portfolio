@@ -114,6 +114,7 @@ img {
     display: block;
     margin: 0 auto;
     animation: loadIMG 2s;
+    transition: transform .4s;
 }
 
 .logo {
@@ -123,7 +124,7 @@ img {
     height:70%;
 }
 
-.logo:hover {
+.logo:hover, img:hover {
     transform: scale(1.3);
 }
 
@@ -203,7 +204,7 @@ img {
     display: none;
 }
 
-.img-project {
+#project-img img {
     margin-top: 5px;
 }
 
